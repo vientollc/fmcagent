@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>FMC Agent</title>
+        
+        <link href="css/codiqa.ext.min.css" rel="stylesheet">
+          <link href="css/jquery.mobile.theme-1.3.1.min.css" rel="stylesheet">
+          <link href="css/viento.css" rel="stylesheet">
+          <link href="css/jquery.mobile.structure-1.3.1.min.css" rel="stylesheet">
+        
+          <script src="js/jquery-1.9.1.min.js"></script>
+          <script src="js/jquery.mobile-1.3.1.min.js"></script>
+          <script src="js/codiqa.ext.min.js"></script>
+          <script src="js/fmc-agent.js"></script>
+    </head>
+    <body>
+        <div data-role="page" data-control-title="Home" data-theme="g" id="home">
+          <div data-theme="a" data-role="header">
+              <h3>
+                  FMC Aviation
+              </h3>
+          </div>
+          <div data-role="content">
+              <div style="" data-controltype="image">
+                  <img style="width: 100%;" src="img/fmc-logo.jpg">
+              </div>
+              <h2>
+                  Agent Login
+              </h2>
+              <div data-role="fieldcontain" data-controltype="textinput">
+                  <input name="" id="textinput1" placeholder="username" value="" type="text">
+              </div>
+              <div data-role="fieldcontain" data-controltype="textinput">
+                  <input name="" id="textinput2" placeholder="password" value="" type="password">
+              </div>
+              <a data-role="button" data-theme="f" href="#search">
+                  Login
+              </a>
+          </div>
+      </div>
+      <div data-role="page" data-control-title="Search" data-theme="g" id="search">
+          <div data-theme="a" data-role="header">
+              <h3>
+                  FMC Agent
+              </h3>
+          </div>
+          <div data-role="content">
+              <h2>
+                  Find a shipment
+              </h2>
+              <div data-role="fieldcontain" data-controltype="searchinput">
+                  <input name="" id="searchinput1" placeholder="airway bill number" value=""
+                  type="search">
+              </div>
+              <a data-role="button" href="#result">
+                  Search
+              </a>
+          </div>
+      </div>
+      <div data-role="page" data-control-title="Result" id="result">
+          <div data-theme="a" data-role="header">
+              <a data-role="button" href="#search" class="ui-btn-left">
+                  Back
+              </a>
+              <h3>
+                  FMC Agent
+              </h3>
+          </div>
+          <div data-role="content">
+              <ul data-role="listview" data-divider-theme="a" data-inset="true">
+                  <li data-role="list-divider" role="heading">
+                      Search Result
+                  </li>
+                  <li data-theme="c">
+                      Consignee: ABC Limited
+                  </li>
+                  <li data-theme="c">
+                      Airway Bill No: ...
+                  </li>
+                  <li data-theme="c">
+                      Arrival: 12th Jan 2014
+                  </li>
+                  <li data-theme="c">
+                      Description: General Cargo
+                  </li>
+                  <li data-theme="c">
+                      Status: Moved Into Warehouse
+                  </li>
+                  <li data-theme="c">
+                      Tally Officer: Moses Robinson
+                  </li>
+                  <li data-theme="c">
+                      Detained: 0
+                  </li>
+                  <li data-theme="c">
+                      Tally: 19
+                  </li>
+                  <li data-theme="c">
+                      Agent: Ganiyu Mohammed
+                  </li>
+                  <li data-theme="c">
+                      Agent Company: XYZ Shipping
+                  </li>
+                  <li data-theme="c">
+                      Warehouse: NAHCO WH 1
+                  </li>
+                  <li data-theme="c">
+                      Position: X-33
+                  </li>
+              </ul>
+          </div>
+      </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

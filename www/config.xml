@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.vientollc.fmcagent" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>FMCAgent</name>
+    <description>
+        FMC Aviation Agent Application
+    </description>
+    <author email="rjohn@vientollc.com" href="http://vientollc.com">
+        Viento Consulting Ltd
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+</widget>
